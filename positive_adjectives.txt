@@ -14,7 +14,7 @@ calm
 careful
 charming
 communicative
-compassionate 
+compassionate
 conscientious
 considerate
 convivial
@@ -63,7 +63,7 @@ nice
 optimistic
 passionate
 patient
-persistent 
+persistent
 pioneering
 philosophical
 placid
