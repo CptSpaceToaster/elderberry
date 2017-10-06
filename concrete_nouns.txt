@@ -1,41 +1,96 @@
-volcano
-wombat
-dessert
-mandolin
-grape
-egghead
-panpipe
-lightbulb
+Frenchman
+SUV
 acorn
-brigand
-quail
-potato
 apron
-sandal
-stalk of wheat
-snail
-insurance
-squirrel
-mermaid
+armchair
 bar of soap
-loaf
-pocket
-corn maze
-pirate
-stop sign
-dowry
-yam
-ladybug
-bunkbed
-kneecap
-purebred poodle
-ship in a bottle
-vegetable
-pizza
+barber (of seville)
+beef jerky
+billboard
+biscuit
 bookshelf
-ream of paper
-strumpet
-economic recession
+breadcrumb
+brigand
+bunkbed
+bus stop
+buttercup
+canoe
+catfish
+chopstick
+chunk of iron ore
+clown
+corn cake
+corn maze
+dessert
+dingleberry
+dining table
+dolphin
+dowry
 dragon scale
-tootsie roll
+dust pan
+earthworm
+economic recession
+egg roll
+egghead
+eggplant
+eyelash
+firefly
+fishbowl
+flower pot
+grape
+grocery cart
 grocery receipt
+iceberg
+insurance
+kneecap
+ladybug
+laser beam
+lightbulb
+llama
+loaf
+mandolin
+margarita
+mermaid
+moose
+nerd
+nun
+pancake
+panpipe
+parking ticket
+pirate
+pizza
+pocket
+potato
+printer cartridge
+purebred poodle
+quail
+radish
+ream of paper
+sandal
+scarecrow
+screw
+shed
+ship in a bottle
+six-pack
+snail
+snowflake
+spatula
+sponge fish
+squirrel
+stalk of wheat
+stop sign
+strumpet
+submarine
+substitute teacher
+tax exemption
+toaster
+tootsie roll
+vegetable
+vegetarian
+vineyard
+volcano
+waffle
+washing machine
+wombat
+yam
+yankee
