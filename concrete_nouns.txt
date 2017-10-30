@@ -1,5 +1,3 @@
-Frenchman
-SUV
 acorn
 apron
 armchair
@@ -11,6 +9,7 @@ biscuit
 bookshelf
 breadcrumb
 brigand
+bumblebee
 bunkbed
 bus stop
 buttercup
@@ -41,6 +40,7 @@ eyelash
 firefly
 fishbowl
 flower pot
+Frenchman
 grape
 grocery cart
 grocery receipt
@@ -52,6 +52,7 @@ laser beam
 lightbulb
 llama
 loaf
+losenge
 mandolin
 margarita
 mermaid
@@ -86,6 +87,7 @@ stop sign
 strumpet
 submarine
 substitute teacher
+SUV
 tax exemption
 toaster
 tootsie roll
