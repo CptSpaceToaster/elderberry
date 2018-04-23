@@ -24,8 +24,9 @@ class PhraseGen:
                 random.choice(self.concrete_nouns)
 
     def idea(self):
-        return random.choice([self.insult(), self.compliment()]) + \
-                ' ' + random.choice(self.actions)
+        noun = random.choice([self.insult(), self.compliment()])
+        prefix = 'An ' if noun[:1] in 'aeiou' else 'A '
+        return prefix + noun + ' ' + random.choice(self.actions)
 
 
 if __name__ == '__main__':
