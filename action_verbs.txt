@@ -1,0 +1,46 @@
+purchase
+obtain
+ask about
+bake
+bring
+build
+buy
+call for
+climb
+close
+dream about
+blend
+eat
+fix
+replace
+give
+grab
+repair
+insult
+kick
+leave
+lift
+make
+move
+open
+play
+push
+read
+ride
+run at
+send
+shout at
+sing
+sit on
+stand on
+talk to
+think about
+throw
+touch
+rotate
+visit
+vote for
+wait for
+walk towards
+write
+yell at

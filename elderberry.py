@@ -18,6 +18,8 @@ class PhraseGen:
             self.genders = f.read().splitlines()
         with open('locations.txt') as f:
             self.locations = f.read().splitlines()
+        with open('action_verbs.txt') as f:
+            self.action_verbs = f.read().splitlines()
 
     def insult(self):
         return random.choice(self.negative_adjectives) + ' ' + \
@@ -40,6 +42,12 @@ class PhraseGen:
         prefix = 'An ' if noun[:1] in 'aeiou' else 'A '
         return prefix + noun + ' ' + random.choice(self.actions)
 
+    def todo(self):
+        verb = random.choice(self.action_verbs).capitalize()
+        noun = random.choice([self.insult(), self.compliment()])
+        prefix = 'an ' if noun[:1] in 'aeiou' else 'a '
+        return verb + ' ' + prefix + noun + ' ' + random.choice(self.actions)
+
 
 if __name__ == '__main__':
     parser = argparse.ArgumentParser(description='Insult Generator')
@@ -51,17 +59,21 @@ if __name__ == '__main__':
                         help='Generate a \"compliment\"')
     parser.add_argument('-a', '--asl', action='store_true',
                         help='Generate an ASL profile')
+    parser.add_argument('-t', '--todo', action='store_true',
+                        help='Generate something for a todo list')
     args = parser.parse_args()
 
     gen = PhraseGen()
     done = 0
     while (done < args.count):
         done += 1
-        if (args.idea):
+        if args.idea:
             print(gen.idea())
-        elif (args.asl):
+        elif args.asl:
             print(gen.asl())
-        elif (args.compliment):
+        elif args.compliment:
             print(gen.compliment())
+        elif args.todo:
+            print(gen.todo())
         else:
             print(gen.insult())
