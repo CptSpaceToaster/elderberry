@@ -14,8 +14,6 @@ class PhraseGen:
             self.concrete_nouns = f.read().splitlines()
         with open('actions.txt') as f:
             self.actions = f.read().splitlines()
-        with open('all_genders_so_far.txt') as f:
-            self.genders = f.read().splitlines()
         with open('locations.txt') as f:
             self.locations = f.read().splitlines()
         with open('action_verbs.txt') as f:
@@ -28,14 +26,6 @@ class PhraseGen:
     def compliment(self):
         return random.choice(self.positive_adjectives) + ' ' + \
                 random.choice(self.concrete_nouns)
-
-    def asl(self):
-        a = random.randint(18, 100)
-        s = random.choice(self.positive_adjectives) + ' ' + \
-            random.choice(self.genders) + ' ' + \
-            random.choice(self.concrete_nouns)
-        l = random.choice(self.locations)
-        return '{}/{}/{}'.format(a, s, l)
 
     def idea(self):
         noun = random.choice([self.insult(), self.compliment()])
@@ -57,8 +47,6 @@ if __name__ == '__main__':
                         help='Generate an \"idea\"')
     parser.add_argument('-c', '--compliment', action='store_true',
                         help='Generate a \"compliment\"')
-    parser.add_argument('-a', '--asl', action='store_true',
-                        help='Generate an ASL profile')
     parser.add_argument('-t', '--todo', action='store_true',
                         help='Generate something for a todo list')
     args = parser.parse_args()
@@ -69,8 +57,6 @@ if __name__ == '__main__':
         done += 1
         if args.idea:
             print(gen.idea())
-        elif args.asl:
-            print(gen.asl())
         elif args.compliment:
             print(gen.compliment())
         elif args.todo:
