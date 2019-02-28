@@ -2,9 +2,9 @@
 
 #### Procedurally generated content gone awry with large lists and random selection
 
-Easily generate compliments, insults, "character ideas", and "things to do"
+Easily generate "compliments", "insults", "character ideas", and "things to do"
 
-# Usage:
+## Usage:
 
 ```
 $ ./elderberry.py -h
@@ -21,3 +21,9 @@ optional arguments:
   -c, --compliment  Generate a "compliment"
   -t, --todo        Generate something for a todo list
 ```
+
+## TODO:
+
+- Fight a narrow-minded ladybug piloting a giant, cybernetic suit
+- Assist a funny sponge fish karate chopping people in the throat
+- Stop a humorous snail shouting insults at strangers
