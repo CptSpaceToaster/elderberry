@@ -40,7 +40,7 @@ class PhraseGen:
 
 
 if __name__ == '__main__':
-    parser = argparse.ArgumentParser(description='Insult Generator')
+    parser = argparse.ArgumentParser(description='Procedural content generator')
     parser.add_argument('count', type=int, nargs='?', default=1,
                         help='Number of items to generate')
     parser.add_argument('-i', '--idea', action='store_true',
