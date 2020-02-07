@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+#!/usr/bin/env python3
 
 import argparse
 import random
@@ -30,13 +30,18 @@ class PhraseGen:
     def idea(self):
         noun = random.choice([self.insult(), self.compliment()])
         prefix = 'An ' if noun[:1] in 'aeiou' else 'A '
-        return prefix + noun + ' ' + random.choice(self.actions)
+        return f"{prefix}{noun} {random.choice(self.actions)}"
 
     def todo(self):
         verb = random.choice(self.action_verbs).capitalize()
         noun = random.choice([self.insult(), self.compliment()])
         prefix = 'an ' if noun[:1] in 'aeiou' else 'a '
-        return verb + ' ' + prefix + noun + ' ' + random.choice(self.actions)
+        return f"{verb} {prefix}{noun} {random.choice(self.actions)}"
+
+    def wizard(self):
+        level = random.randint(0, 99) + 1
+        noun = random.choice(self.concrete_nouns)
+        return f"Level: {level} {noun} wizard"
 
 
 if __name__ == '__main__':
@@ -49,6 +54,8 @@ if __name__ == '__main__':
                         help='Generate a \"compliment\"')
     parser.add_argument('-t', '--todo', action='store_true',
                         help='Generate something for a todo list')
+    parser.add_argument('-w', '--wizard', action='store_true',
+                        help='Make a wizard class')
     args = parser.parse_args()
 
     gen = PhraseGen()
@@ -61,5 +68,7 @@ if __name__ == '__main__':
             print(gen.compliment())
         elif args.todo:
             print(gen.todo())
+        elif args.wizard:
+            print(gen.wizard())
         else:
             print(gen.insult())
