@@ -16,10 +16,13 @@ positional arguments:
   count             Number of items to generate
 
 optional arguments:
-  -h, --help        show this help message and exit
-  -i, --idea        Generate an "idea"
-  -c, --compliment  Generate a "compliment"
-  -t, --todo        Generate something for a todo list
+  -h, --help            show this help message and exit
+  -i, --idea            Generate an "idea"
+  -c, --compliment      Generate a "compliment"
+  -t, --todo            Generate something for a todo list
+  -w, --wizard          Make a wizard class
+  -l LEVEL, --level LEVEL
+                        Wizard level
 ```
 
 ## TODO:
