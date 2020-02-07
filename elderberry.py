@@ -38,11 +38,16 @@ class PhraseGen:
         prefix = 'an ' if noun[:1] in 'aeiou' else 'a '
         return f"{verb} {prefix}{noun} {random.choice(self.actions)}"
 
-    def wizard(self):
-        level = random.randint(0, 99) + 1
+    def wizard(self, level=None):
+        if level is None:
+            level = random.randint(0, 99) + 1
         noun = random.choice(self.concrete_nouns)
-        return f"Level: {level} {noun} wizard"
+        if level >= 100:
+            noun = f"{random.choice(self.positive_adjectives)} {noun}"
+        if level <= -100:
+            noun = f"{random.choice(self.negative_adjectives)} {noun}"
 
+        return f"Level: {level} {noun} wizard"
 
 if __name__ == '__main__':
     parser = argparse.ArgumentParser(description='Procedural content generator')
@@ -56,6 +61,8 @@ if __name__ == '__main__':
                         help='Generate something for a todo list')
     parser.add_argument('-w', '--wizard', action='store_true',
                         help='Make a wizard class')
+    parser.add_argument('-l', '--level', type=int,
+                        help='Wizard level')
     args = parser.parse_args()
 
     gen = PhraseGen()
@@ -69,6 +76,6 @@ if __name__ == '__main__':
         elif args.todo:
             print(gen.todo())
         elif args.wizard:
-            print(gen.wizard())
+            print(gen.wizard(args.level))
         else:
             print(gen.insult())
