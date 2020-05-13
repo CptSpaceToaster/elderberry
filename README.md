@@ -13,7 +13,7 @@ usage: elderberry.py [-h] [-i] [-c] [-t] [count]
 Procedural content generator
 
 positional arguments:
-  count             Number of items to generate
+  count                 Number of items to generate
 
 optional arguments:
   -h, --help            show this help message and exit
@@ -23,6 +23,8 @@ optional arguments:
   -w, --wizard          Make a wizard class
   -l LEVEL, --level LEVEL
                         Wizard level
+  -f, --fact            Generate an accurate fact
+  -u, --username        Generate an good username or handle
 ```
 
 ## TODO:
