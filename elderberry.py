@@ -70,7 +70,7 @@ class PhraseGen:
     def wizard(self, level=None):
         if level is None:
             level = random.randint(0, 99) + 1
-        noun = self.weighted_noun(level)
+        noun = random.choice(self.concrete_nouns)
         return f"Level: {level} {noun} wizard"
 
     def fact(self):
