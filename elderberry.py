@@ -87,7 +87,7 @@ class PhraseGen:
         if number > 50:
             name1 = random.choice(self.single_word_concrete_nouns).capitalize()
         else:
-            name1 = random.choice(self.positive_adjectives)
+            name1 = random.choice(self.positive_adjectives).capitalize()
         name2 = random.choice(self.single_word_concrete_nouns).capitalize()
         return f"{name1}{name2}{number}"
 
